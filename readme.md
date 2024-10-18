@@ -53,13 +53,13 @@ background: url() no-repeat (attachment) 50% (50%) / cover (100px)
 
 ### figure
 
- <figure>
+   <figure>
    <img src="./images/img-07.jpg">
    <figcaption>
       <h3>Analysis</h3>
       <p>이 이제 가을 하나에 내린 까닭이요, 듯합니다</p>
    </figcaption>
- </figure>
+ /figure>
 
 ### 페이지 구성시 감싸는 태그가 필요한지 판단하기
 
