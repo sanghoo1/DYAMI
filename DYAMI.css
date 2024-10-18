@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+body{
+  font-family:"Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #212529;
+}
+/* header */
+header{
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  
+ 
+}
+header h1{
+  width: 75px;
+  height: 60px;
+  background: url(./images/logo.png) no-repeat 50% / contain;
+  text-indent: -9999px;
+}
+header .global-menu{
+  display: none;
+}
+header .nav-btn{
+  
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top:5px;
+}
+header .nav-btn img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* main */
+
+.main-slide{
+  background: url(https://placehold.co/1200x844/FF885B/fff?text=img1) no-repeat 50% / cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main-slide a{
+  position: absolute;
+}
+.main-slide .main-slide-leftarrow{
+  top:45%;
+  left:16px;
+}
+.main-slide .main-slide-rightarrow{
+  top:45%;
+  right: 16px;
+}
+.main-slide a img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  
+}
+
+/*  main-intro */
+
+.main-intro{
+  padding: 32px 26px;
+}
+.main-intro .main-intro-list li{
+  padding: 16px;
+  border-bottom: 1px solid rgba(51, 51, 51,0.3);
+}
+.main-intro h2{
+  font-family: "Montserrat", serif;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.main-intro .main-intro-list li p{
+  color: rgb(33, 37, 41);
+}
+/* main-imgsection*/
+.main-imgsection .main-imgsection-list li{
+  width: 100%;
+  height: 290px;
+  position: relative;
+  
+  
+}
+.main-imgsection .main-imgsection-list li a{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.main-imgsection .main-imgsection-list .box1  {
+  background: url(./images/1.jpg) no-repeat 50% / cover;
+  
+   
+}
+.main-imgsection .main-imgsection-list .box2 {
+  background: url(./images/2.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list .box3 {
+  background: url(./images/3.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list .box4 {
+  background: url(./images/4.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list .box5 {
+  background: url(./images/5.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list .box6 {
+  background: url(./images/6.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list .box7 {
+  background: url(./images/7.jpg) no-repeat 50% /cover;
+   
+}
+.main-imgsection .main-imgsection-list li:hover .imgwrapper{
+  background: rgba(255, 255, 255,0.5);
+  height: 100%;
+  transition: 0.5s;
+  
+}
+.main-imgsection .main-imgsection-list li:hover a{
+  opacity: 1;
+
+}
+
+/* main business */
+.main-business{
+  padding: 32px 38px;
+}
+.main-title{
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+}
+.main-title-line{
+  width: 50px;
+  border-bottom: 2px solid #222;
+  margin: 0 auto;
+}
+.main-business h3{
+  font-weight: 300;
+  font-size: 20px;
+  color: #212529;
+  padding-bottom: 96px;
+  padding-top: 30px;
+}
+.main-business-list h4{
+  font-weight: 700;
+}
+ li img{
+  width: 100%;
+  margin-bottom: 24px;
+}
+.main-business-list li h4, .main-business-list li p{
+  padding: 0 24px;
+}
+.main-business-list li p{
+  padding-bottom:24px ;
+}
+/* main-youtube */
+.main-youtube{
+  padding: 47px 36px 32px 36px;
+  text-align: left;
+  background-color: beige;
+}
+.main-youtube h3{
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+.youtube-wrapper{
+  
+  width: 100%;
+  
+  
+}
+.youtube-wrapper .youtube{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  
+  
+
+}
+/* main-service */
+
+.main-service{
+  padding: 32px 24px;
+}
+
+.main-service .main-title-line{
+  margin: 0 auto;
+  text-align: center;
+}
+.main-title-wrapper{
+  padding: 0 12px;
+}
+.main-service-list{
+  padding-top: 50px;
+}
+.main-service-list li figure figcaption{
+  text-align: left;
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  
+  
+}
+.main-service-list li figure figcaption h3{
+  padding-bottom: 10px;
+}
+.main-service-list li:not(:first-child){
+  display: none;
+}
+
+/*  main-loction */
+.main-location{
+  padding: 32px 26px;
+}
+.main-location .main-location-section{
+  display: grid;
+  font-size: 20px;
+  font-weight: 600;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}
+.main-location .main-location-section li{
+  padding: 8px 16px;
+}
+.main-location .main-location-section li:first-child{
+  border-bottom: 
+  3px solid #000;
+}
+.main-location .main-location-section li:last-child{
+  border-bottom: 1px solid #000;
+}
+.main-location-wrapper{
+  padding: 0 12px;
+}
+.main-location-map{
+  border: 1px solid #000;
+  width: 100%;
+  height: 337px;
+  margin:   48px 0;
+}
+.main-location-map-address{
+  text-align: left;
+}
+.main-location-map-address li strong{
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-location-map-address li{
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+/*  contact us */
+.main-contactUs{
+  background: url(./images/img-bg.jpg) no-repeat 50% / cover;
+  color: #fff;
+  
+  
+}
+.main-contactUs h3{
+  font-size: 20px;
+  font-weight: 300;
+}
+.main-contactUs .main-contactUs-wrapper h3:nth-of-type(2){
+  padding-bottom: 30px;
+}
+.main-contactUs .main-contactUs-wrapper{
+  background: rgba(31, 141, 214, 0.5);
+  padding: 32px 35px;
+}
+.contactUs-btn{
+  
+  padding: 10px 16px;
+ 
+  border: 1px solid #fff;
+}
+
+/* footer */
+footer{
+  padding-top:50px ;
+  text-align: left;
+}
+footer h1{
+  width: 126px;
+  height:101px ;
+  text-indent: -999px;
+  background: url(./images/logo@2x.png) no-repeat 50% / contain;
+  
+}
+.address-list li h3{
+  padding: 24px;
+}
+.address-list li span{
+  display: block;
+}
+.address-list li p{
+  padding: 24px;
+}
+.address-list li a img{
+margin: 8px;
+  width: 16px;
+}
+.address-list .sns {
+  padding: 16px;
+
+}
+.copyright{
+  text-align: center;
+  padding: 20px ;
+  background-color: antiquewhite;
+  font-size: 14px;
+}
