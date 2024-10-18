@@ -20,6 +20,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
     rel="stylesheet">
+    <!-- 카카오맵 스크립트 -->
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=e2de939460f43392c76dc857847a14cc"></script>
 </head>
 
 <body>
@@ -227,7 +229,7 @@
           <li>FACTORY</li>
         </ul>
       </div>
-      <div class="main-location-map"></div>
+      <div class="main-location-map" id="kakaoMap"></div>
       <ul class="main-location-map-address">
         <li><strong>address</strong>795 Folsom Ave, Suite 600 San Francisco</li>
         <li><strong>tel</strong>02-1234-5678</li>
@@ -281,6 +283,25 @@
     </div>
 
   </footer>
+  <!-- 카카오맵 스크립트 -->
+  <script>
+		const mapContainer = document.getElementById('kakaoMap'), // 지도를 표시할 div 
+		    mapOption = {
+		        center: new kakao.maps.LatLng(37.2680712, 127.0002517), // 지도의 중심좌표
+		        level: 3, // 지도의 확대 레벨
+		        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+		    }; 
+
+		// 지도를 생성한다 
+		const map = new kakao.maps.Map(mapContainer, mapOption); 
+
+		// 지도에 마커를 생성하고 표시한다
+		const marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(37.2680712, 127.0002517), // 마커의 좌표
+		    map: map // 마커를 표시할 지도 객체
+		});
+
+	</script>
 </body>
 
 </html>
