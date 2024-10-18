@@ -47,10 +47,28 @@ header .nav-btn img{
 /* main */
 
 .main-slide{
-  background: url(https://placehold.co/1200x844/FF885B/fff?text=img1) no-repeat 50% / cover;
+  background: url(./images/hero-bg.png) no-repeat 50% / cover;
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+.main-slide .slide-txt h4{
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.main-slide .slide-txt h3{
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.main-slide .slide-txt {
+  font-family: "Montserrat", serif;
+  text-transform: capitalize;
+  position: absolute;
+  left: 50%;
+  top:15%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 .main-slide a{
   position: absolute;
@@ -58,16 +76,29 @@ header .nav-btn img{
 .main-slide .main-slide-leftarrow{
   top:45%;
   left:16px;
+  width: 50px;
+  height: 50px;
 }
 .main-slide .main-slide-rightarrow{
   top:45%;
   right: 16px;
+  width: 50px;
+  height: 50px;
+}
+.main-slide  .heroimg img{
+  display: block;
+  width: 366px;
+  height: 366px;
+  
+}
+.main-slide  .heroimg {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main-slide a img{
   display: block;
-  width: 50px;
-  height: 50px;
-  
+  width: 100%;
 }
 
 /*  main-intro */
@@ -233,8 +264,17 @@ header .nav-btn img{
 .main-service-list li:not(:first-child){
   display: none;
 }
+/*  cocompany */
+.main-cocompany-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 50px 30px;
+  background-color: #9e9c9c;
+}
 
-/*  main-loction */
+
+
+/*  main-location */
 .main-location{
   padding: 32px 26px;
 }

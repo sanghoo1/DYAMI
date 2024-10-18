@@ -17,6 +17,31 @@
   header .nav-btn{
     display: none;
   }
+  .main-slide .slide-txt{
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17%;
+    width: 40%;
+  }
+  .main-slide .main-slide-img .heroimg{
+    top:45%;
+    transform: translateY(-50%);
+    right:20%;
+  }
+  .main-slide .main-slide-img .heroimg img{
+    width: 40vw;
+    height: auto;
+    
+    
+  }
+  .main-slide .slide-txt h4{
+    font-size: 20px;
+  }
+  .main-slide .slide-txt h3{
+    font-size: 60px;
+  }
+
   .main-intro{
     padding: 108px;
   }
@@ -116,6 +141,12 @@
 }
 .main-service-list li:not(:first-child){
   display: block;
+}
+
+/*  cocompany */
+.main-cocompany-list{ 
+  grid-template-columns: repeat(6,1fr);
+ 
 }
 .main-location{
   padding: 150px;
